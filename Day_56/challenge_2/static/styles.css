@@ -1,0 +1,36 @@
+.blue_back{
+    background-color:   #c4f8f9;
+}
+.cursive_font {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color: rgb(20, 139, 4);
+    font-size: 100px;
+}
+.intro_font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(20, 139, 4);
+    font-size: 30px;
+}
+.div_title_page{
+    padding-left: 1100px;
+}
+.div_cursive_text{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.div_intro_text{
+    padding-bottom: 0px;
+}
+.div_bot_pic{
+    padding-left: 250px;
+}
+.subheadingText{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: rgb(20, 139, 4);
+}
+.body_text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: black
+}

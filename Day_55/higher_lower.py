@@ -19,7 +19,7 @@ def bld_h1_decorator(function):
 @app.route('/')
 @bld_h1_decorator
 def landing_page():
-    return 'Guess A Number Between 0 And 9<br><img src="https://media3.giphy.com/media/IsfrRWvbUdRny/200.webp?cid=ecf05e47an7f0lq9vqt4jjbrz981foo9vudi9fd7uv7q8f4s&ep=v1_gifs_search&rid=200.webp&ct=g"></li>'
+    return 'Guess A Number Between 0 And 9<br><img src="https://media3.giphy.com/media/IsfrRWvbUdRny/200.webp?cid=ecf05e47an7f0lq9vqt4jjbrz981foo9vudi9fd7uv7q8f4s&ep=v1_gifs_search&rid=200.webp&ct=g">'
 
 
 g_number = number()
