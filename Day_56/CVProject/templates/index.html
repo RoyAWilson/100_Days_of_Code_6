@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Personal Page</title>
+    <link rel="stylesheet" , href="static/styles_2.css" />
+  </head>
+  <body class="index_body">
+    <center>
+     <h1>Welcome to my page:</h1> 
+    </center>
+    <div class=box>
+        <h2>A little about me:<h2>
+        <div class="indent">
+            <p>A man living in the South East of England.  Home being in the Garden of England, Kent
+            I was born in Folkestone on Kent coast, not far from Dover, in the days when there were still
+            sailings every day over to Boulogne in France.
+            I moved with my Family to Maidstone in 1979 following my father's work.  My grandparents and my mother's
+            siblings were also living in Maistone.  I completed the last few years of secondary education in a local comprehensive.<br />
+            After finishing schooling I worked on local farms picking and packing fruits and driving tractors.
+            My first proper job was as a builders labourer working on various sites around the area including working on the new<br />
+            (back then) conference centre on Brighton seafront soon after the bombing of Grand Hotel.
+            In later years I worked on several fairly pretigious sites in and around London as a tower crane operator.<br />
+            When the building went bust, I re-skilled to work in offices gaining my Level 3 in Business Adminitstration.<br />
+            I enjoy reading fiction and walking, when the weather is good and am an animal lover having had both pet dogs, cats and fish<br />
+            If you are interested in more about me you can see my CV here:<br /><a href='{{url_for("cv")}}'>my cv</a></p>
+        </div>
+    </div>
+    <div class="box">
+        <h2>
+            Here are a few picture I have taken while out walking in the local countryside:
+        </h2>
+        <div class="indent">
+            <table>
+              <tr>
+                <td><a href="{{url_for('image1')}}"><img src="static/Thumbs/20220522_114208_t.jpg"></a></td>
+                <td><a href="{{url_for('image2')}}"><img src="static/Thumbs/20220522_114220_t.jpg"></a></td>
+                <td><a href="{{url_for('image3')}}"><img src="static/Thumbs/20220527_123236_t.jpg"></a></td>
+                <td><a href="{{url_for('image4')}}"><img src="static/Thumbs/20220529_115840_t.jpg"></a></td>
+                <td>no more images, only proof of concept</td>
+              </tr>
+            </table>
+        </div>
+    </div>
+    
+  </body>
+</html>
