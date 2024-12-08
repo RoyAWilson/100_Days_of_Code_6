@@ -1,24 +1,15 @@
+"""
+    Build a webpage with Flask and flask_bootstrap
+
+    Returns:
+        _type_: web page
+"""
+
 import os
 from dotenv import load_dotenv
 from flask import Flask, render_template
-from flask_wtf import FlaskForm
 from flask_bootstrap import Bootstrap5
-from wtforms import StringField
-from wtforms.validators import DataRequired
 from login_form import LoginForm
-
-'''
-Red underlines? Install the required packages first: 
-Open the Terminal in PyCharm (bottom left). 
-
-On Windows type:
-python -m pip install -r requirements.txt
-
-On MacOS type:
-pip3 install -r requirements.txt
-
-This will install the packages from requirements.txt for this project.
-'''
 
 app = Flask(__name__)
 load_dotenv()
@@ -28,11 +19,21 @@ app.secret_key = os.getenv('SECRET_KEY')
 
 @app.route("/")
 def home():
+    """build home page
+
+    Returns:
+        HTML doc: Landing page
+    """
     return render_template('index.html')
 
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    """Show login page when called for
+
+    Returns:
+        HTML: Login page
+    """
     login_form = LoginForm()
     if login_form.validate_on_submit():
         if login_form.email.data == "admin@email.com" and login_form.password.data == "12345678":
